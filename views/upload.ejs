@@ -9,23 +9,26 @@
 <body>
 
   <div id="music-list">
-    <h2>Music List</h2>
+    <h3><a href="/client/music/library">Choose sound from Library</a></h3>
   </div>
   
   <form id="musicForm">
-    <h3>Upload music</h3>
-    <input type="file" name="music" id="music"><br>
+    <h2>Upload video</h2>
+    <input type="file" name="video" id="video"><br>
+    <div id="outPutAudio">
+      <h3>Sound</h3>
+      <audio controls id="uploadedMusicAudio">
+        <source id="uploadedMusicSource" type="">
+      </audio>
+    </div>
+    <div>
+      <h3>Use Custom Sound (optional)</h3>
+      <input type="file" name="sound" id="sound"><br>
+    </div>
     <button type="submit">Upload</button>
   </form>
-
-  <div id="outPutAudio">
-    <h3>Verify Audio</h3>
-    <audio controls id="uploadedMusicAudio">
-      <source id="uploadedMusicSource" src="" type="">
-    </audio>
-  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>
